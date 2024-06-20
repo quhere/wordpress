@@ -1,5 +1,5 @@
 {
-    "name": "CI/CD for WordPress",
+    "name": "ciwordpress",
     "on": {
       "push": {
         "branches": ["main"]
