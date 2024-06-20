@@ -1,5 +1,7 @@
 {
     "name": "vendor/ciwordpress",
+    "description": "A WordPress project setup with CI/CD using GitHub Actions",
+    "license": "MIT",
     "on": {
       "push": {
         "branches": ["main"]
