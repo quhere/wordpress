@@ -1,40 +1,9 @@
 {
-    "name": "vendor/ciwordpress",
-    "description": "A WordPress project setup with CI/CD using GitHub Actions",
-    "license": "MIT",
-    "on": {
-      "push": {
-        "branches": ["main"]
-      }
-    },
-    "jobs": {
-      "build": {
-        "runs-on": "ubuntu-latest",
-        "steps": [
-          {
-            "name": "Checkout code",
-            "uses": "actions/checkout@v2"
-          },
-          {
-            "name": "Set up PHP",
-            "uses": "shivammathur/setup-php@v2",
-            "with": {
-              "php-version": "7.4"
-            }
-          },
-          {
-            "name": "Install dependencies",
-            "run": "composer install"
-          },
-          {
-            "name": "Run WordPress tests",
-            "run": "vendor/bin/phpunit"
-          },
-          {
-            "name": "Build and Deploy",
-            "run": "echo 'Your deployment script goes here'"
-          }
-        ]
-      }
-    }
+  "name": "vendor/ciwordpress",
+  "description": "A WordPress project setup with CI/CD using GitHub Actions",
+  "license": "MIT",
+  "require": {
+      "php": "^7.4",
+      "composer/installers": "^1.9"
+  }
   }
