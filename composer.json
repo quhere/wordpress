@@ -6,7 +6,7 @@
     "php": ">=7.4",
     "composer/installers": "~1.0"
   },
-  "license": "proprietary",
+  "license": "MIT",
   "extra": {
     "installer-paths": {
       "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
@@ -17,10 +17,11 @@
     "test": "vendor/bin/phpunit"
   },
   "config": {
-        "allow-plugins": {
-            "third-party/required-plugin": true,
-            "my-organization/*": true,
-            "unnecessary/plugin": false
-        }
+    "allow-plugins": {
+      "composer/installers": true,
+      "third-party/required-plugin": true,
+      "my-organization/*": true,
+      "unnecessary/plugin": false
     }
+  }
 }
